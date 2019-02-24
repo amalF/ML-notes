@@ -4,9 +4,9 @@
 This paper represents an end-to-end pipeline enabling discovery in
 stochastic and partially observable environments.
 
-## Research questions
+## Research goals
 * Train agents capable of incorporating **novel** information to build
-  a global understanding of its world
+  a global understanding of their worlds
 * Built agents capable of selecting useful novelties from random observations
   in stochastic/partially observable environments
 
@@ -19,18 +19,18 @@ representation of the world.
 There are two main discovery mechanisms in the litterature: the first one is 
 **active information seeking** which consists in identifying novel information 
 from the current knowledge using an internal reward mechanism. The second 
-approach aims at building a **model of the world** which encompasses the agent's 
-global view of its environment.
+approach aims at building a **model of the world** based on a set of hypothesis 
+which encompasses the agent's global view of its environment.
 
 ## What are the main components of discovery?
-1- **Model of the world** : What we currently know about the world
-2- **Learning algorithm** : How to improve the first component predictions
-3- **Intrinsic reward generator** : based on the world's model, attributes
+1. **Model of the world** : What we currently know about the world
+2. **Learning algorithm** : How to improve the first component predictions
+3. **Intrinsic reward generator** : based on the world's model, attributes
 a reward to new patterns
-4- **RL algorithm** : Used to learn optimal policy regarding the intrinsic
+4. **RL algorithm** : Used to learn optimal policy regarding the intrinsic
 rewards
 
-![Image]("./images/discovery-cycle.png")
+("./images/discovery-cycle.png")
 
 ## How to learn a model of the world?
 The model of the world represent our knowledge about the environment. A good
