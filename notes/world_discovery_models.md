@@ -1,15 +1,16 @@
-# Worrld Discovery Models
+# World Discovery Models
 
-###TLDR; This paper represents an end-to-end pipeline enabling discovery in
+### TLDR;
+This paper represents an end-to-end pipeline enabling discovery in
 stochastic and partially observable environments.
 
-##Research questions
+## Research questions
 * Train agents capable of incorporating **novel** information to build
   a global understanding of its world
 * Built agents capable of selecting useful novelties from random observations
   in stochastic/partially observable environments
 
-##What is discovery ?
+## What is discovery ?
 It is the ability to learn new knowledge about the world independently from
 the task performed and in a self-supervised way. Self-supervision means that
 the agent does not rely on a feedback from the environment to learn its
@@ -21,7 +22,7 @@ from the current knowledge using an internal reward mechanism. The second
 approach aims at building a **model of the world** which encompasses the agent's 
 global view of its environment.
 
-##What are the main components of discovery?
+## What are the main components of discovery?
 1- **Model of the world** : What we currently know about the world
 2- **Learning algorithm** : How to improve the first component predictions
 3- **Intrinsic reward generator** : based on the world's model, attributes
@@ -31,7 +32,7 @@ rewards
 
 ![Image]("./images/discovery-cycle.png")
 
-##How to learn a model of the world?
+## How to learn a model of the world?
 The model of the world represent our knowledge about the environment. A good
 model enables us to predict future states/observations of the world given past
 observations and actions.
@@ -46,7 +47,7 @@ model is the hidden state of the RNN. The model is trained using K prediction
 tasks consisting in, for each task k, estimating the probability distribution of
 the future state conditioned on the current model and the sequence of past actions.
 
-##How to motivate discovery?
+## How to motivate discovery?
 To encourage the agent to discuver new information, intrinsic rewards are the
 key. This reward is simply a measure of how accurate the predictions of the
 model are.
@@ -57,7 +58,7 @@ after the observation at time _t_.
 This reward definition deals with white noise issues and appreciate how much
 progress is done to gather new information about the world.
 
-##Takeawyas
+## Takeawyas
 * A end-to-end algorithm for discovery is proposed,
 * The proposed pipeline overcomes the white noise issues faced by other
   information-seeking methods,
