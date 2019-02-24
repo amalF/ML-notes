@@ -59,7 +59,8 @@ This reward definition deals with white noise issues and appreciate how much
 progress is done to gather new information about the world.
 
 ## Takeawyas
-* A end-to-end algorithm for discovery is proposed,
+* A end-to-end algorithm for discovery is proposed for partially observed and 
+  noisy environments,
 * The proposed pipeline overcomes the white noise issues faced by other
   information-seeking methods,
 * New intrinsic reward function is proposed to quantify the progress done in
