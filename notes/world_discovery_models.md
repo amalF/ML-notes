@@ -30,7 +30,7 @@ a reward to new patterns
 4. **RL algorithm** : Used to learn optimal policy regarding the intrinsic
 rewards
 
-![](images/discovery-cycle.png?raw=true)
+![](../images/discovery-cycle.png)
 
 ## How to learn a model of the world?
 The model of the world represent our knowledge about the environment. A good
